@@ -1,0 +1,217 @@
+/* index.CSS for top-level container DOM element CSS style rules, 
+since the src level index.js is the initial place in a React-based
+application where you tell React to physically mount the App Component */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+
+  /* Buttons */
+  --accent: #ffff; 
+  --d-accent: #808080; 
+  --secondary: #373737; 
+  --m-button: #0000ffe8;
+  
+ /* Borders */
+  --border-outer: #60e0e1;
+  --border-card: #a6f249;
+  --border-inner: #381306;
+  /* fonts */
+  --font-header:  #60e0e1;
+  --font-card: #0000ffe8;
+  --font-numbers: #9b3615;
+  --secondary: #373737; 
+}
+
+  body {
+  font-family: 'VT323', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+/* HEADER LOGO   ----------------------------- */
+
+.fa {
+  font-size: 80px;
+  color: var(--d-accent);
+  padding: 4px 4px 0px 4px;
+  bottom: 0px;
+  border-radius: 8px;
+
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-text {
+  font-size: 50px;
+  color: var(--font-header);
+  letter-spacing: 8px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 28px;
+  color: var(--font-header);
+  letter-spacing: 8px;
+}
+
+
+
+/* CARDS  ------------------------------------------ */
+
+
+.cards {
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* card header font  */
+  font-size: 28px;
+  letter-spacing: 5px;
+  margin-top: 100px;
+  color: var(--font-header);
+  padding: 15px 0px 0px 0px;
+  /* font-weight: 600; */
+
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+  height: 350px;
+  max-width: 700px;
+  
+  background-color: var(--light);
+  margin: 40px 10px 20px 10px;
+  border: solid 10px #a6f249;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table {
+  width: 80%;
+  margin: 40px 0px 10px 0px;
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 8px;
+
+}
+
+td {
+  font-size: 28px;
+  color: var(--font-numbers);
+  float: right;
+  
+}
+
+/* text */
+tr {
+  font-size: 28px;
+  color: var(--secondary);
+  padding: 100px 10px;
+  /* border: 1px solid rgb(163, 34, 55);   */
+  border: 10px solid pink;
+
+}
+
+/* .search-row,
+label {
+  margin: 0px;
+  justify-content: center;
+  /* margin-top: 2rem; *
+}
+input[type="text"],
+select {
+  width: 180px;
+  padding: 5px 10px;
+  border: var(--d-accent);
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+} */
+
+/* search button  ----------------- */
+.btn-primary {
+  width: 200px;
+  height: 40px;
+  background-color: var(--border-card);
+  border-radius: 3px;
+  border: none;
+  transition: 0.6s;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  border-radius: 5px;
+  /* font-weight: bold; */
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+  margin: 40px 10px 0px 10px;
+}
+/* button hover */
+button:hover {
+  background-color: var(--d-accent);
+  color: var(--accent);
+}
+
+
+
+/* FOOTER --------------------------------------------- */
+
+.footer {
+  color: var(--accent);
+  font-size: 16px;
+  outline: none;
+  text-decoration: none;
+  transition: 0.8s;
+  padding: 10px 0px;
+  background-color: var(--secondary);
+  line-height: 30px;
+  /* position: fixed; */
+  bottom: 0px;
+}
+
+/* MEDIA  -------------------------------------------- */
+
+/* Cards */
+@media screen and (min-width: 40em) {
+  .Cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Cards {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .Cards {
+    flex: 0 1 calc(25% - 1em);
+  }
+}
+
+/* TABLE  ---------------------------------- */
+@media screen and (max-width: 800px) {
+  tr,td {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.5em 0;
+    border-radius: 8px;
+    border: 100px solid var(--d-accent); 
+   padding: 10px;
+  }
+
+  
+  th {
+    flex: 1 1 150px;
+  } 
+}
