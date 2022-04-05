@@ -9,7 +9,7 @@ function ScoreCardAsc(props) {
           return (
             <div className="cards">
               {`HIGH SCORES: ${el.name}`}
-              <div className="scoreContainer">
+              <div>
                 <table className="table">
                   <tbody>
                     {el.scores

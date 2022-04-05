@@ -7,10 +7,12 @@ const Page = (props) => {
       <div className="d-flex ">
         <span className="status">
           status
+          {/* toggle button */}
           <i
             className={props.status ? "fas fa-arrow-down" : "fas fa-arrow-up"}
           ></i>
         </span>
+
         <button
           onClick={props.handleAscending}
           className={props.status ? "Ascending" : "Descending"}
@@ -20,6 +22,7 @@ const Page = (props) => {
         </button>
         <h1>High Scores Per Country </h1>
       </div>
+      {/* table */}
       {props.data.CountryScores.sort((a, b) => (a.name > b.name ? 1 : -1)).map(
         (eachCountry, index) => (
           <Table className="countryBorder" bordered key={index}>
@@ -27,11 +30,13 @@ const Page = (props) => {
               <tr>
                 <td className="score">
                   <h1>
-                    <span className="header"> xxx Scores:</span>
+                    <span className="header">xx</span>
                     <span className="countryName">{eachCountry.name}</span>
                   </h1>
                 </td>
               </tr>
+
+              {/* xx */}
               <tr>
                 <td className="small-table">
                   {props.status
@@ -42,9 +47,11 @@ const Page = (props) => {
                             <tbody className="bodyTable">
                               <tr>
                                 <td className="myName">
-                                  {element.n.toUpperCase()}
+                                  {" "}
+                                  {element.n.toUpperCase()}{" "}
                                 </td>
                               </tr>
+
                               <tr>
                                 <td className="myScore">{element.s}</td>
                               </tr>

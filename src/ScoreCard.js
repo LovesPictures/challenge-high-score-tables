@@ -7,10 +7,10 @@ function ScoreCard(props) {
         .sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0))
         .map((el) => {
           return (
-            <div className="outer-border">
+            <div>
               <div className="cards">
                 {`HIGH SCORES: ${el.name}`}
-                <div className="scoreContainer">
+                <div>
                   <table className="table">
                     <tbody>
                       {el.scores

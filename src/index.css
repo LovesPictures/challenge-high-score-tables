@@ -44,14 +44,10 @@ application where you tell React to physically mount the App Component */
 
 /* HEADER LOGO   ----------------------------- */
 
-.fa {
+.logo {
   font-size: 80px;
-  color: var(--d-accent);
-  padding: 4px 4px 0px 4px;
-  bottom: 0px;
-  border-radius: 8px;
-
-  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  padding: 4px 4px 0px 4px;  
 }
 
 .header-text {
@@ -123,21 +119,6 @@ tr {
 
 }
 
-/* .search-row,
-label {
-  margin: 0px;
-  justify-content: center;
-  /* margin-top: 2rem; *
-}
-input[type="text"],
-select {
-  width: 180px;
-  padding: 5px 10px;
-  border: var(--d-accent);
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
-} */
 
 /* search button  ----------------- */
 .btn-primary {
